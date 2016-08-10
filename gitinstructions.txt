@@ -1,0 +1,12 @@
+Hello daniel.
+
+Once I have added you as a collaborator you can then clone our git repository 
+onto your computer. We have started work on the challenge.
+
+First follow all the 'git config' instructions on this tutorial http://chryswoods.com/beginning_git/basics.html
+
+Then in a suitable working directory type:
+git clone https://github.com/js1435/iwbda
+
+Then when working together if you would follow the rough protovol outlined 
+in workflow.txt that would be great!
