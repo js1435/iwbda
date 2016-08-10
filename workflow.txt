@@ -1,0 +1,8 @@
+An example of good workflow for multi-user git repositories:
+
+git status: if working directory isn't clean then git commit -a
+git pull: get changes from others, if there are conflicts then merge then git commit -a then git push to merge
+git commit -a: commit your changes that you have now made then git status to ensure your working directory is clean
+git pull: pull any changes that anyone might habe made whilst you were working, if there are conflicts then act as above until working directory is clean
+when git pull causes no changes and git status shows that yor working directory is clean then git push to push your work to the cloud
+
