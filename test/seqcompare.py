@@ -8,12 +8,44 @@ RFILE = open( file, "r" )
 
 lines = RFILE.readlines()
 
-seqs = lines[1::2] 					#slicing lines matrix to take only the second 
-									#elements of the array i.e. the DNA seq
+# print ( "%s" % lines ) 
 
-for i in range(0, len(seqs) ):
-	seq = seqs[i].rstrip()			#removing newline comments
-	# print ( "%s" % seq )
+id = []											#sequence id matrix
+
+for line in lines:
+	i = re.search(r">\d+", line)
+	if i:
+		id.append(i.group(0))
+
+preseq = [ x for x in lines if ">" not in x ] 	#removing lines in matrix that contain 
+												#">" character.
+
+preseq = [x.rstrip() for x in preseq]			#removing newline comments
+
+# print ("%s" % preseq )
+
+seqs = []										#sequence matrix
+nearlyseq = []
+k = 0
+p = 0
+
+# print("%s" %preseq[0])
+# print("%s" %len(preseq[0]))
+
+for j in range(0, len(preseq)):
+	if len(preseq[j]) == 80 :
+		nearlyseq[p] = preseq[j]
+		p = p + 1
+	elif len(preseq[j]) != 80 :
+		seqs = preseq[j] + "".join(nearlyseq)
+		p = 0
+		k = k + 1
+
+print ("%s" %seqs[3])
+# print("%s" %len(preseq[3]))
+
+
+# print ("%s" % seqs)
 
 RFILE.close
 
