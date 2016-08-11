@@ -8,5 +8,6 @@ First follow all the 'git config' instructions on this tutorial http://chryswood
 Then in a suitable working directory type:
 git clone https://github.com/js1435/iwbda
 
-Then when working together if you would follow the rough protovol outlined 
+Then when working together if you would follow the rough protocol outlined 
 in workflow.txt that would be great!
+
