@@ -3,44 +3,43 @@ import sys
 import re
 import numpy as np
 
-def genDic() 
 
-	file = sys.argv[1]
+file = sys.argv[1]
 
-	RFILE = open( file, "r" )
+RFILE = open( file, "r" )
 
-	lines = RFILE.readlines()
+lines = RFILE.readlines()
 
-	# print ( "%s" % lines ) 
+# print ( "%s" % lines ) 
 
-	id = []											#sequence id matrix
+id = []											#sequence id matrix
 
-	for line in lines:
-		i = re.search(r">\d+", line)
-		if i:
-			id.append(i.group(0))
+for line in lines:
+	i = re.search(r">\d+", line)
+	if i:
+		id.append(i.group(0))
 
-	preseq = [ x for x in lines if ">" not in x ] 	#removing lines in matrix that contain 
+preseq = [ x for x in lines if ">" not in x ] 	#removing lines in matrix that contain 
 													#">" character.
 
-	preseq = [x.rstrip() for x in preseq]			#removing newline comments
+preseq = [x.rstrip() for x in preseq]			#removing newline comments
 
-	#print ("%s" % preseq )
-
-
-
-	# print("%s" %preseq[0])
-	# print("%s" %len(preseq[0]))
-
-	lenPreSeq = len(preseq)
-
-	seqs = []									#sequence matrix
-	nearlyseq = []
-	k = 0
-	p = 0
+#print ("%s" % preseq )
 
 
-	#for j in range(0, lenPreSeq):
+
+# print("%s" %preseq[0])
+# print("%s" %len(preseq[0]))
+
+lenPreSeq = len(preseq)
+
+seqs = []									#sequence matrix
+nearlyseq = []
+k = 0
+p = 0
+
+
+#for j in range(0, lenPreSeq):
 	#	if len(preseq[j]) == 80 :
 	#		nearlyseq[p] = preseq[j]
 	#		p = p + 1
@@ -53,17 +52,16 @@ def genDic()
 	# print("%s" %len(preseq[3]))
 
 
-	for i in range(0 , lenPreSeq):
+for i in range(0 , lenPreSeq):
 
-		seqs.append({'I.D': i , 'Sequence': preseq[i] , 'Length':len(preseq[i])})
+	seqs.append({'I.D': i , 'Sequence': preseq[i] , 'Length':len(preseq[i])})
 
 	
 
-	return(seqs)
 
-	# print ("%s" % seqs)
-
-	RFILE.close
+RFILE.close
+print (seqs)
+print(id)
 
 ########################################################
 # Task 1 ###############################################
