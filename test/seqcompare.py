@@ -1,55 +1,69 @@
 from __future__ import print_function
 import sys
 import re
+import numpy as np
 
-file = sys.argv[1]
+def genDic() 
 
-RFILE = open( file, "r" )
+	file = sys.argv[1]
 
-lines = RFILE.readlines()
+	RFILE = open( file, "r" )
 
-# print ( "%s" % lines ) 
+	lines = RFILE.readlines()
 
-id = []											#sequence id matrix
+	# print ( "%s" % lines ) 
 
-for line in lines:
-	i = re.search(r">\d+", line)
-	if i:
-		id.append(i.group(0))
+	id = []											#sequence id matrix
 
-preseq = [ x for x in lines if ">" not in x ] 	#removing lines in matrix that contain 
-												#">" character.
+	for line in lines:
+		i = re.search(r">\d+", line)
+		if i:
+			id.append(i.group(0))
 
-preseq = [x.rstrip() for x in preseq]			#removing newline comments
+	preseq = [ x for x in lines if ">" not in x ] 	#removing lines in matrix that contain 
+													#">" character.
 
-# print ("%s" % preseq )
+	preseq = [x.rstrip() for x in preseq]			#removing newline comments
 
-seqs = []										#sequence matrix
-nearlyseq = []
-k = 0
-p = 0
-
-# print("%s" %preseq[0])
-# print("%s" %len(preseq[0]))
-
-lenPreSeq = len(preseq)
-
-for j in range(0, lenPreSeq):
-	if len(preseq[j]) == 80 :
-		nearlyseq[p] = preseq[j]
-		p = p + 1
-	elif len(preseq[j]) != 80 :
-		seqs = preseq[j] + "".join(nearlyseq)
-		p = 0
-		k = k + 1
-
-print ("%s" %seqs[3])
-# print("%s" %len(preseq[3]))
+	#print ("%s" % preseq )
 
 
-# print ("%s" % seqs)
 
-RFILE.close
+	# print("%s" %preseq[0])
+	# print("%s" %len(preseq[0]))
+
+	lenPreSeq = len(preseq)
+
+	seqs = []									#sequence matrix
+	nearlyseq = []
+	k = 0
+	p = 0
+
+
+	#for j in range(0, lenPreSeq):
+	#	if len(preseq[j]) == 80 :
+	#		nearlyseq[p] = preseq[j]
+	#		p = p + 1
+	#	elif len(preseq[j]) != 80 :
+	#		seqs = preseq[j] + "".join(nearlyseq)
+	#		p = 0
+	#		k = k + 1
+
+	#print ("%s" %seqs[3])
+	# print("%s" %len(preseq[3]))
+
+
+	for i in range(0 , lenPreSeq):
+
+		seqs.append({'I.D': i , 'Sequence': preseq[i] , 'Length':len(preseq[i])})
+
+	
+
+	return(seqs)
+
+	# print ("%s" % seqs)
+
+	RFILE.close
 
 ########################################################
 # Task 1 ###############################################
