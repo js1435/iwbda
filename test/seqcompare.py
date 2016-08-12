@@ -32,7 +32,9 @@ p = 0
 # print("%s" %preseq[0])
 # print("%s" %len(preseq[0]))
 
-for j in range(0, len(preseq)):
+lenPreSeq = len(preseq)
+
+for j in range(0, lenPreSeq):
 	if len(preseq[j]) == 80 :
 		nearlyseq[p] = preseq[j]
 		p = p + 1
