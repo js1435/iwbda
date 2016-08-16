@@ -1,0 +1,276 @@
+2016-08-16 19:53:51.657+0000 INFO  [org.neo4j]: WARNING! You are using an unsupported version of the Java runtime. Please use Oracle(R) Java(TM) Runtime Environment 7.
+2016-08-16 19:53:51.751+0000 INFO  [org.neo4j]: --- INITIALIZED diagnostics START ---
+2016-08-16 19:53:51.751+0000 INFO  [org.neo4j]: Neo4j Kernel properties:
+    neostore.propertystore.db.strings.mapped_memory=46M
+    ephemeral=false
+    neostore.nodestore.db.mapped_memory=15M
+    store_dir=data/eugene
+    neostore.propertystore.db.arrays.mapped_memory=53M
+    neostore.propertystore.db.mapped_memory=54M
+    neostore.relationshipstore.db.mapped_memory=66M
+2016-08-16 19:53:51.751+0000 INFO  [org.neo4j]: Diagnostics providers:
+    org.neo4j.kernel.configuration.Config
+    org.neo4j.kernel.info.DiagnosticsManager
+    SYSTEM_MEMORY
+    JAVA_MEMORY
+    OPERATING_SYSTEM
+    JAVA_VIRTUAL_MACHINE
+    CLASSPATH
+    LIBRARY_PATH
+    SYSTEM_PROPERTIES
+    NETWORK
+2016-08-16 19:53:51.751+0000 INFO  [org.neo4j]: System memory information:
+    Total Physical memory: 3.92 GB
+    Free Physical memory: 1.40 GB
+    Committed virtual memory: 145.86 MB
+    Total swap space: 7.83 GB
+    Free swap space: 4.42 GB
+2016-08-16 19:53:51.782+0000 INFO  [org.neo4j]: JVM memory information:
+    Free  memory: 47.69 MB
+    Total memory: 61.50 MB
+    Max   memory: 892.50 MB
+    Garbage Collector: PS Scavenge: [PS Eden Space, PS Survivor Space]
+    Garbage Collector: PS MarkSweep: [PS Eden Space, PS Survivor Space, PS Old Gen]
+    Memory Pool: Code Cache (Non-heap memory): committed=2.44 MB, used=2.17 MB, max=240.00 MB, threshold=0.00 B
+    Memory Pool: Metaspace (Non-heap memory): committed=8.63 MB, used=8.37 MB, max=-1.00 B, threshold=0.00 B
+    Memory Pool: Compressed Class Space (Non-heap memory): committed=1.13 MB, used=1.01 MB, max=1.00 GB, threshold=0.00 B
+    Memory Pool: PS Eden Space (Heap memory): committed=16.00 MB, used=13.81 MB, max=329.50 MB, threshold=?
+    Memory Pool: PS Survivor Space (Heap memory): committed=2.50 MB, used=0.00 B, max=2.50 MB, threshold=?
+    Memory Pool: PS Old Gen (Heap memory): committed=43.00 MB, used=0.00 B, max=669.50 MB, threshold=0.00 B
+2016-08-16 19:53:51.798+0000 INFO  [org.neo4j]: Operating system information:
+    Operating System: Windows 7; version: 6.1; arch: amd64; cpus: 4
+    Process id: 18796@Vittorio-PC
+    Byte order: LITTLE_ENDIAN
+    Local timezone: Europe/London
+2016-08-16 19:53:51.798+0000 INFO  [org.neo4j]: JVM information:
+    VM Name: Java HotSpot(TM) 64-Bit Server VM
+    VM Vendor: Oracle Corporation
+    VM Version: 25.101-b13
+    JIT compiler: HotSpot 64-Bit Tiered Compilers
+    VM Arguments: []
+2016-08-16 19:53:51.813+0000 INFO  [org.neo4j]: Java classpath:
+     [bootstrap] C:\Program Files\Java\jre1.8.0_101\classes
+     [bootstrap] C:\Program Files\Java\jre1.8.0_101\lib\charsets.jar
+     [loader.0] file:/C:/Users/Vittorio/Documents/SynBio/Coding/BDAthlon/Task%201/V%20Repress/eugene.jar
+     [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_101/lib/ext/cldrdata.jar
+     [bootstrap] C:\Program Files\Java\jre1.8.0_101\lib\rt.jar
+     [bootstrap] C:\Program Files\Java\jre1.8.0_101\lib\sunrsasign.jar
+     [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_101/lib/ext/access-bridge-64.jar
+     [bootstrap] C:\Program Files\Java\jre1.8.0_101\lib\resources.jar
+     [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_101/lib/ext/sunec.jar
+     [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_101/lib/ext/jaccess.jar
+     [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_101/lib/ext/nashorn.jar
+     [classpath] C:\Users\Vittorio\Documents\SynBio\Coding\BDAthlon\Task 1\V Repress\eugene.jar
+     [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_101/lib/ext/sunpkcs11.jar
+     [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_101/lib/ext/sunmscapi.jar
+     [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_101/lib/ext/dnsns.jar
+     [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_101/lib/ext/localedata.jar
+     [bootstrap] C:\Program Files\Java\jre1.8.0_101\lib\jfr.jar
+     [bootstrap] C:\Program Files\Java\jre1.8.0_101\lib\jsse.jar
+     [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_101/lib/ext/sunjce_provider.jar
+     [bootstrap] C:\Program Files\Java\jre1.8.0_101\lib\jce.jar
+     [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_101/lib/ext/jfxrt.jar
+     [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_101/lib/ext/zipfs.jar
+2016-08-16 19:53:51.813+0000 INFO  [org.neo4j]: Library path:
+    C:\ProgramData\Oracle\Java\javapath
+    C:\Windows\Sun\Java\bin
+    C:\Windows\System32
+    C:\Windows
+    C:\ProgramData\Oracle\Java\javapath
+    C:\Program Files\copasi.org\COPASI 4.16.104\bin
+    C:\Program Files (x86)\Intel\iCLS Client
+    C:\Program Files\Intel\iCLS Client
+    C:\Windows\System32
+    C:\Windows
+    C:\Windows\System32\wbem
+    C:\Windows\System32\WindowsPowerShell\v1.0
+    C:\Program Files\Broadcom\Broadcom 802.11 Network Adapter
+    C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86
+    C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64
+    C:\Program Files (x86)\Skype\Phone
+    C:\Program Files\MiKTeX 2.9\miktex\bin\x64
+    C:\Users\Vittorio\Anaconda2
+    C:\Users\Vittorio\Anaconda2\Scripts
+    C:\Users\Vittorio\Anaconda2\Library\bin
+    C:\Users\Vittorio\Documents\SynBio\Coding\BDAthlon\Task 1\V Repress
+2016-08-16 19:53:51.829+0000 INFO  [org.neo4j]: System.properties:
+    sun.boot.library.path = C:\Program Files\Java\jre1.8.0_101\bin
+    path.separator = ;
+    file.encoding.pkg = sun.io
+    user.country = GB
+    user.script = 
+    sun.java.launcher = SUN_STANDARD
+    sun.os.patch.level = Service Pack 1
+    user.dir = C:\Users\Vittorio\Documents\SynBio\Coding\BDAthlon\Task 1\V Repress
+    user.variant = 
+    sun.jnu.encoding = Cp1252
+    sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+    user.home = C:\Users\Vittorio
+    user.timezone = Europe/London
+    file.encoding = Cp1252
+    user.name = Vittorio
+    sun.java.command = eugene.jar repressilator.eug
+    sun.arch.data.model = 64
+    user.language = en
+    awt.toolkit = sun.awt.windows.WToolkit
+    sun.stderr.encoding = cp850
+    file.separator = \
+    sun.io.unicode.encoding = UnicodeLittle
+    sun.cpu.endian = little
+    sun.stdout.encoding = cp850
+    sun.desktop = windows
+    sun.cpu.isalist = amd64
+2016-08-16 19:53:51.829+0000 INFO  [org.neo4j]: Network information:
+    Interface Software Loopback Interface 1:
+        address: 127.0.0.1
+        address: 0:0:0:0:0:0:0:1
+    Interface WAN Miniport (SSTP):
+    Interface WAN Miniport (L2TP):
+    Interface WAN Miniport (PPTP):
+    Interface WAN Miniport (PPPOE):
+    Interface WAN Miniport (IPv6):
+    Interface WAN Miniport (Network Monitor):
+    Interface WAN Miniport (IP):
+    Interface RAS Async Adapter:
+    Interface WAN Miniport (IKEv2):
+    Interface Bluetooth Device (RFCOMM Protocol TDI):
+    Interface Bluetooth Device (Personal Area Network):
+        address: fe80:0:0:0:9d9a:9806:3b73:690f%eth3
+    Interface Broadcom 802.11n Network Adapter:
+        address: 10.65.197.158
+        address: fe80:0:0:0:11a3:f65:163e:efc5%wlan0
+    Interface Realtek PCIe GBE Family Controller:
+        address: fe80:0:0:0:88d6:62c5:b3a6:bcfe%eth4
+    Interface null:
+    Interface Broadcom 802.11n Network Adapter - Deterministic Network Enhancer Miniport:
+    Interface Realtek PCIe GBE Family Controller - Deterministic Network Enhancer Miniport:
+    Interface WAN Miniport (Network Monitor) - Deterministic Network Enhancer Miniport:
+    Interface WAN Miniport (IP) - Deterministic Network Enhancer Miniport:
+    Interface Cisco Systems VPN Adapter for 64-bit Windows:
+    Interface Cisco Systems VPN Adapter for 64-bit Windows - Deterministic Network Enhancer Miniport:
+    Interface Microsoft 6to4 Adapter:
+    Interface Teredo Tunneling Pseudo-Interface:
+        address: fe80:0:0:0:e0:0:0:0%net7
+    Interface Microsoft ISATAP Adapter #3:
+    Interface Microsoft ISATAP Adapter #4:
+    Interface Microsoft ISATAP Adapter #2:
+    Interface Juniper Networks Virtual Adapter Manager:
+    Interface Juniper Networks Virtual Adapter:
+    Interface Juniper Networks Virtual Adapter - Deterministic Network Enhancer Miniport:
+    Interface Broadcom 802.11n Network Adapter-Virtual WiFi Filter Driver-0000:
+    Interface Realtek PCIe GBE Family Controller-Juniper Network Service-0000:
+    Interface Broadcom 802.11n Network Adapter - Deterministic Network Enhancer Miniport-QoS Packet Scheduler-0000:
+    Interface Broadcom 802.11n Network Adapter - Deterministic Network Enhancer Miniport-WFP LightWeight Filter-0000:
+    Interface WAN Miniport (IPv6)-QoS Packet Scheduler-0000:
+    Interface WAN Miniport (IP)-Juniper Network Service-0000:
+    Interface WAN Miniport (Network Monitor) - Deterministic Network Enhancer Miniport-QoS Packet Scheduler-0000:
+    Interface WAN Miniport (IP) - Deterministic Network Enhancer Miniport-QoS Packet Scheduler-0000:
+    Interface Broadcom 802.11n Network Adapter-Native WiFi Filter Driver-0000:
+    Interface Broadcom 802.11n Network Adapter-Juniper Network Service-0000:
+    Interface Realtek PCIe GBE Family Controller - Deterministic Network Enhancer Miniport-QoS Packet Scheduler-0000:
+    Interface Realtek PCIe GBE Family Controller - Deterministic Network Enhancer Miniport-WFP LightWeight Filter-0000:
+2016-08-16 19:53:52.063+0000 INFO  [org.neo4j]: --- INITIALIZED diagnostics END ---
+2016-08-16 19:53:52.079+0000 INFO  [org.neo4j]: Creating new db @ data\eugene\neostore
+2016-08-16 19:53:52.281+0000 INFO  [org.neo4j]: [data\eugene\neostore.nodestore.db] brickCount=0 brickSize=157284b mappedMem=15728640b (storeSize=0b)
+2016-08-16 19:53:52.344+0000 INFO  [org.neo4j]: data\eugene\neostore.nodestore.db hit=1 miss=0 switches=0 ooe=0
+2016-08-16 19:53:53.217+0000 INFO  [org.neo4j]: [data\eugene\neostore.relationshiptypestore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2016-08-16 19:53:53.233+0000 INFO  [org.neo4j]: [data\eugene\neostore.relationshiptypestore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2016-08-16 19:53:53.295+0000 INFO  [org.neo4j]: data\eugene\neostore.relationshiptypestore.db.names hit=0 miss=0 switches=0 ooe=0
+2016-08-16 19:53:53.405+0000 INFO  [org.neo4j]: data\eugene\neostore.relationshiptypestore.db hit=0 miss=0 switches=0 ooe=0
+2016-08-16 19:53:53.483+0000 INFO  [org.neo4j]: [data\eugene\neostore.relationshiptypestore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2016-08-16 19:53:53.498+0000 INFO  [org.neo4j]: [data\eugene\neostore.relationshiptypestore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2016-08-16 19:53:53.498+0000 INFO  [org.neo4j]: [data\eugene\neostore.propertystore.db.strings] brickCount=0 brickSize=48128b mappedMem=48234496b (storeSize=128b)
+2016-08-16 19:53:53.498+0000 INFO  [org.neo4j]: [data\eugene\neostore.propertystore.db.index.keys] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2016-08-16 19:53:53.498+0000 INFO  [org.neo4j]: [data\eugene\neostore.propertystore.db.index] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2016-08-16 19:53:53.498+0000 INFO  [org.neo4j]: [data\eugene\neostore.propertystore.db.arrays] brickCount=0 brickSize=55552b mappedMem=55574528b (storeSize=128b)
+2016-08-16 19:53:53.514+0000 INFO  [org.neo4j]: [data\eugene\neostore.propertystore.db] brickCount=0 brickSize=566210b mappedMem=56623104b (storeSize=0b)
+2016-08-16 19:53:53.514+0000 INFO  [org.neo4j]: [data\eugene\neostore.relationshipstore.db] brickCount=0 brickSize=692043b mappedMem=69206016b (storeSize=0b)
+2016-08-16 19:53:53.514+0000 INFO  [org.neo4j]: [data\eugene\neostore.nodestore.db] brickCount=0 brickSize=15723b mappedMem=15728640b (storeSize=9b)
+2016-08-16 19:53:53.514+0000 INFO  [org.neo4j]: [data\eugene\neostore] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2016-08-16 19:53:53.561+0000 INFO  [org.neo4j]: data\eugene\neostore.relationshiptypestore.db.names hit=0 miss=0 switches=0 ooe=0
+2016-08-16 19:53:53.654+0000 INFO  [org.neo4j]: data\eugene\neostore.relationshiptypestore.db hit=0 miss=0 switches=0 ooe=0
+2016-08-16 19:53:53.748+0000 INFO  [org.neo4j]: data\eugene\neostore.propertystore.db.strings hit=0 miss=0 switches=0 ooe=0
+2016-08-16 19:53:53.857+0000 INFO  [org.neo4j]: data\eugene\neostore.propertystore.db.index.keys hit=0 miss=0 switches=0 ooe=0
+2016-08-16 19:53:53.966+0000 INFO  [org.neo4j]: data\eugene\neostore.propertystore.db.index hit=0 miss=0 switches=0 ooe=0
+2016-08-16 19:53:54.060+0000 INFO  [org.neo4j]: data\eugene\neostore.propertystore.db.arrays hit=0 miss=0 switches=0 ooe=0
+2016-08-16 19:53:54.169+0000 INFO  [org.neo4j]: data\eugene\neostore.propertystore.db hit=0 miss=0 switches=0 ooe=0
+2016-08-16 19:53:54.263+0000 INFO  [org.neo4j]: data\eugene\neostore.relationshipstore.db hit=0 miss=0 switches=0 ooe=0
+2016-08-16 19:53:54.387+0000 INFO  [org.neo4j]: data\eugene\neostore.nodestore.db hit=0 miss=0 switches=0 ooe=0
+2016-08-16 19:53:54.497+0000 INFO  [org.neo4j]: data\eugene\neostore hit=0 miss=8 switches=0 ooe=0
+2016-08-16 19:53:54.575+0000 INFO  [org.neo4j]: [data\eugene\neostore.relationshiptypestore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2016-08-16 19:53:54.590+0000 INFO  [org.neo4j]: [data\eugene\neostore.relationshiptypestore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2016-08-16 19:53:54.590+0000 INFO  [org.neo4j]: [data\eugene\neostore.propertystore.db.strings] brickCount=0 brickSize=48128b mappedMem=48234496b (storeSize=128b)
+2016-08-16 19:53:54.590+0000 INFO  [org.neo4j]: [data\eugene\neostore.propertystore.db.index.keys] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2016-08-16 19:53:54.590+0000 INFO  [org.neo4j]: [data\eugene\neostore.propertystore.db.index] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2016-08-16 19:53:54.590+0000 INFO  [org.neo4j]: [data\eugene\neostore.propertystore.db.arrays] brickCount=0 brickSize=55552b mappedMem=55574528b (storeSize=128b)
+2016-08-16 19:53:54.590+0000 INFO  [org.neo4j]: [data\eugene\neostore.propertystore.db] brickCount=0 brickSize=566210b mappedMem=56623104b (storeSize=0b)
+2016-08-16 19:53:54.590+0000 INFO  [org.neo4j]: [data\eugene\neostore.relationshipstore.db] brickCount=0 brickSize=692043b mappedMem=69206016b (storeSize=0b)
+2016-08-16 19:53:54.590+0000 INFO  [org.neo4j]: [data\eugene\neostore.nodestore.db] brickCount=0 brickSize=15723b mappedMem=15728640b (storeSize=9b)
+2016-08-16 19:53:54.590+0000 INFO  [org.neo4j]: [data\eugene\neostore] brickCount=0 brickSize=0b mappedMem=0b (storeSize=54b)
+2016-08-16 19:53:54.606+0000 INFO  [org.neo4j]: Opened logical log [data\eugene\nioneo_logical.log.1] version=0, lastTxId=1 (clean)
+2016-08-16 19:53:54.668+0000 INFO  [org.neo4j]: TM new log: tm_tx_log.1
+2016-08-16 19:53:54.715+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:Versions START ---
+2016-08-16 19:53:54.715+0000 INFO  [org.neo4j]: Graph Database: org.neo4j.kernel.EmbeddedGraphDatabase StoreId[time:1471377232094, id:1702572648069369341, store version: 13561656364791302]
+2016-08-16 19:53:54.715+0000 INFO  [org.neo4j]: Kernel version: neo4j-kernel ${version} ${TODAY}
+2016-08-16 19:53:54.715+0000 INFO  [org.neo4j]: Neo4j component versions:
+2016-08-16 19:53:54.715+0000 INFO  [org.neo4j]:   neo4j-kernel ${version} ${TODAY}
+2016-08-16 19:53:54.715+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:Versions END ---
+2016-08-16 19:53:54.715+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_VERSIONS START ---
+2016-08-16 19:53:54.715+0000 INFO  [org.neo4j]: Store versions:
+    Store versions:
+      NeoStore v0.A.0
+      NodeStore v0.A.0
+      RelationshipStore v0.A.0
+      RelationshipTypeStore v0.A.0
+      PropertyStore v0.A.0
+      PropertyIndexStore v0.A.0
+      StringPropertyStore v0.A.0
+      ArrayPropertyStore v0.A.0
+2016-08-16 19:53:54.715+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_VERSIONS END ---
+2016-08-16 19:53:54.715+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_ID_USAGE START ---
+2016-08-16 19:53:54.715+0000 INFO  [org.neo4j]: Id usage:
+    Id usage:
+      NodeStore: used=1 high=0
+      RelationshipStore: used=0 high=-1
+      RelationshipTypeStore: used=0 high=-1
+      PropertyStore: used=0 high=-1
+      PropertyIndexStore: used=0 high=-1
+      StringPropertyStore: used=1 high=0
+      ArrayPropertyStore: used=1 high=0
+2016-08-16 19:53:54.731+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_ID_USAGE END ---
+2016-08-16 19:53:54.731+0000 INFO  [org.neo4j]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS START ---
+2016-08-16 19:53:54.731+0000 INFO  [org.neo4j]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS END ---
+2016-08-16 19:53:54.731+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles START ---
+2016-08-16 19:53:54.731+0000 INFO  [org.neo4j]: Disk space on partition (Total / Free / Free %): 128881520640 / 1834291200 / 1
+Storage files: (filename : modification date - size)
+      active_tx_log: 2016-08-16T20:53:54+0100 - 11.00 B
+      lock: 2016-08-16T20:53:52+0100 - 0.00 B
+      messages.log: 2016-08-16T20:53:51+0100 - 16.21 kB
+      neostore: 2016-08-16T20:53:54+0100 - 54.00 B
+      neostore.id: 2016-08-16T20:53:54+0100 - 9.00 B
+      neostore.nodestore.db: 2016-08-16T20:53:54+0100 - 9.00 B
+      neostore.nodestore.db.id: 2016-08-16T20:53:54+0100 - 9.00 B
+      neostore.propertystore.db: 2016-08-16T20:53:54+0100 - 0.00 B
+      neostore.propertystore.db.arrays: 2016-08-16T20:53:54+0100 - 128.00 B
+      neostore.propertystore.db.arrays.id: 2016-08-16T20:53:54+0100 - 9.00 B
+      neostore.propertystore.db.id: 2016-08-16T20:53:54+0100 - 9.00 B
+      neostore.propertystore.db.index: 2016-08-16T20:53:54+0100 - 0.00 B
+      neostore.propertystore.db.index.id: 2016-08-16T20:53:53+0100 - 9.00 B
+      neostore.propertystore.db.index.keys: 2016-08-16T20:53:54+0100 - 38.00 B
+      neostore.propertystore.db.index.keys.id: 2016-08-16T20:53:53+0100 - 9.00 B
+      neostore.propertystore.db.strings: 2016-08-16T20:53:54+0100 - 128.00 B
+      neostore.propertystore.db.strings.id: 2016-08-16T20:53:53+0100 - 9.00 B
+      neostore.relationshipstore.db: 2016-08-16T20:53:54+0100 - 0.00 B
+      neostore.relationshipstore.db.id: 2016-08-16T20:53:54+0100 - 9.00 B
+      neostore.relationshiptypestore.db: 2016-08-16T20:53:54+0100 - 0.00 B
+      neostore.relationshiptypestore.db.id: 2016-08-16T20:53:53+0100 - 9.00 B
+      neostore.relationshiptypestore.db.names: 2016-08-16T20:53:54+0100 - 38.00 B
+      neostore.relationshiptypestore.db.names.id: 2016-08-16T20:53:53+0100 - 9.00 B
+      nioneo_logical.log.1: 2016-08-16T20:53:54+0100 - 16.00 B
+      nioneo_logical.log.active: 2016-08-16T20:53:54+0100 - 4.00 B
+      store_lock: 2016-08-16T20:53:52+0100 - 0.00 B
+      tm_tx_log.1: 2016-08-16T20:53:54+0100 - 0.00 B
+2016-08-16 19:53:54.762+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles END ---
+2016-08-16 19:53:54.762+0000 INFO  [org.neo4j]: Started - database is now available
+2016-08-16 19:53:54.777+0000 INFO  [org.neo4j]: GC Monitor started. 
+2016-08-16 19:53:57.172+0000 INFO  [org.neo4j]: GC Monitor: Application threads blocked for an additional 102ms [total block time: 0.102s]
