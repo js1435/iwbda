@@ -1,5 +1,8 @@
 include "BBBRecombDesign-space.h";
 
+/** Define Rules **/
+
+
 /** Hierarchical composition of the parts on Recombinase Input Plasmid pNR64**/
 Device InputUnit(
 	Promoter, Recombinase, Gene, 
@@ -14,39 +17,20 @@ Device RecombinaseSystem(InputUnit, OutputUnit);
 
 /** RULES **/
 Rule r(
-	ON Repressilator:
+	ON RecombinaseSystem:
 
-		// Repressing Relationships
-		RepressilatorUnit[1] REPRESSES RepressilatorUnit[3]
-			AND
-		RepressilatorUnit[4] REPRESSES RepressilatorUnit[6]
-			AND
-		RepressilatorUnit[7] REPRESSES RepressilatorUnit[0]
-		
-			AND
-		
-		// Order of the Promoters and Repressor	
-		STARTSWITH pLac AND TetR NEXTTO pLac AND
-		LacI NEXTTO pCI AND cI NEXTTO pTetR
-		
-		AND
-		
-		// pTetR represses the Reporting Unit
-		RepressilatorUnit[7] REPRESSES ReporterUnit[0]
-
-			AND
-		
-		// GFP as reporter
-		CONTAINS GFP
-		
-			AND
-
-		// T1 Terminators
-		T1 EXACTLY 4
-);
 	
-/** PRODUCE ALL POSSIBLE REPRESSILATORS **/
-lst = product(Repressilator, strict);
-println(lst.size(), " repressilators where generated...");
+
+		
+);
+
+/** Define a rule that specifies that IF ATc is present and BxblBGT is present in OutputUnit, OutputUnit Deleted between OutputUnit[5] and OutputUnit[7] **//
+Rule excie(
+	
+/** PRODUCE ALL POSSIBLE Recombinases **/
+lst = product(RecombinaseSystem, strict);
+println(lst.size(), " Recombinase Systems where generated...");
 
 pigeon(lst);
+
+/** Add iteration for further Recombinations **/
