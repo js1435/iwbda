@@ -11,3 +11,4 @@ from Bio.Alphabet import IUPAC
 seq_record = list(SeqIO.parse("dna_sequences.fasta","fasta"))
 
 print(seq_record[12])
+
